@@ -7,6 +7,7 @@ import { useState } from "react"
 
 function App() {
   const [items, setItems] = useState([]);
+  const numItems=items.length;
 
   // handleAddItems fonksiyonu, yeni bir öğeyi mevcut items listesine ekler.
   function handleAddItems(item) {
@@ -24,14 +25,21 @@ function App() {
       )
     );
   }
+
+  function handleClearItem(){
+    const confirmed=window.confirm(
+      "Are you sure want to delete all items?"
+    )
+    if (confirmed) setItems([])
+  }
   
 
   return (
     <div className="app">
       <Logo />
       <Form onAddItems={handleAddItems} />
-      <PackingList items={items} onDeleteItem={handleDeleteItem} onToggleItem={handleToggleItem} />
-      <Stats />
+      <PackingList items={items} onDeleteItem={handleDeleteItem} onToggleItem={handleToggleItem} onClearList={handleClearItem} />
+      <Stats items={items} />
     </div>
 
   )
