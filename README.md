@@ -1,8 +1,17 @@
-# React + Vite
+# Travel List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Travel List App is an application that helps users keep track of items they need to bring before going on vacation. This app allows you to organize your travel plans and ensure you don't forget any essential items.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ * List Management: Users can create and delete shopping lists.
+ * Task Addition: You can add new tasks to the list and mark tasks as completed.
+ * User-Friendly Interface: A simple and intuitive interface makes it easy to create and edit lists.
+
+
+## Technologies
+
+ * Frontend: React
+ * Styling: CSS
+ * Deployment: Netlify
+
